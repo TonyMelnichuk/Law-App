@@ -1,0 +1,29 @@
+.section {
+  padding: 3rem 0;
+
+  @include breakpoint($mobileL-bp) {
+    padding: 5rem 0;
+  }
+
+  @include breakpoint($tablet-bp) {
+    padding: 6rem 0;
+  }
+}
+
+.section__title {
+  font-size: 2.8rem;
+  text-align: center;
+  padding: 0 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: $primary;
+
+  @include breakpoint($mobileL-bp) {
+    font-size: 3.5rem;
+  }
+
+  @include breakpoint($tablet-bp) {
+    font-size: 5rem;
+  }
+}

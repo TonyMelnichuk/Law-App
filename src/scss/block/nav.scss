@@ -1,0 +1,75 @@
+.nav {
+  background-color: $primary;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 5px 5px 0px #000000;
+
+  &--grey {
+    background-color: #4a5461;
+  }
+
+  @include breakpoint($laptop-bp) {
+    flex-direction: row;
+    background: transparent;
+    position: initial;
+    width: auto;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav__dropdown {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 0;
+}
+
+.nav__item {
+  cursor: pointer;
+  margin-right: 0;
+  margin-bottom: 1.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include breakpoint($laptop-bp) {
+    margin-right: 2rem;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.nav__item-link {
+  text-transform: uppercase;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: darken($secondary, 10%);
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+  &:hover {
+    border-bottom: 2px solid $secondary;
+  }
+
+  &:focus-visible {
+    @include elem-focus('box-shadow');
+  }
+
+  &.active {
+    border-bottom: 2px solid $grey;
+    color: $secondary;
+  }
+
+  @include breakpoint($mobileL-bp) {
+    font-size: 1.5rem;
+  }
+}

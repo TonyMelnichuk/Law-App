@@ -1,0 +1,117 @@
+.header {
+  width: 100%;
+  height: $header-height;
+  position: absolute;
+  top: 0;
+  z-index: $z-index-header;
+  transition: background 0.2s linear;
+
+  &--fixed {
+    position: fixed;
+    top: 0;
+    background-color: $primary;
+    box-shadow: 0px 5px 9px 0px $black;
+  }
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header__burger-btn {
+  padding: 1rem 0;
+  width: 3rem;
+  display: block;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  position: relative;
+
+  &::before,
+  &::after,
+  & > span {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.3rem;
+    background-color: $secondary;
+    transition: transform 0.2s linear, background 0.1s ease-in-out;
+    left: 0;
+    border-radius: 0.3rem;
+  }
+
+  & > span {
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+  }
+
+  &:before {
+    top: 0;
+  }
+
+  &:after {
+    bottom: 0;
+  }
+
+  &--close {
+    padding: 1.5rem;
+
+    & > span {
+      display: none;
+    }
+
+    &::before,
+    &::after {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &:hover {
+    &::before,
+    &::after,
+    & > span {
+      background-color: darken($secondary, 20%);
+    }
+  }
+
+  &:focus-visible {
+    @include elem-focus;
+  }
+
+  @include breakpoint($laptop-bp) {
+    display: none;
+  }
+}
+
+.header__logo {
+  font-size: 4.3rem;
+  font-weight: 700;
+  color: $secondary;
+  cursor: pointer;
+  transition: color 0.1s linear;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  &:hover {
+    color: darken($secondary, 15%);
+  }
+
+  &:focus-visible {
+    @include elem-focus("box-shadow");
+  }
+}

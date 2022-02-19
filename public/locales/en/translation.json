@@ -1,0 +1,298 @@
+{
+  "nav": [
+    {
+      "link": "about us",
+      "path": "about-us",
+      "id": 0
+    },
+    {
+      "link": "team",
+      "path": "team",
+      "id": 1
+    },
+    {
+      "link": "services",
+      "path": "services",
+      "id": 2
+    },
+    {
+      "link": "testimonials",
+      "path": "testimonials",
+      "id": 3
+    },
+    {
+      "link": "FAQ",
+      "path": "faq",
+      "id": 4
+    },
+    {
+      "link": "feedback",
+      "path": "feedback",
+      "id": 5
+    }
+  ],
+  "introSubtitle": "Always at your service",
+  "aboutUs": {
+    "title": "About us",
+    "img": "/images/team/avatar_1.jpg",
+    "sliderData": [
+      {
+        "id": 0,
+        "title": "Why We",
+        "text": "We are the leading Ukrainian law company in terms of dimensions, quantity and importance of transactions followed, which provides its assistance in legal matters both nationally and internationally. We aim to deliver the highest standards of legal services to our clients across our global business.",
+        "author": "Maxim Sloboda"
+      },
+      {
+        "id": 1,
+        "title": "Our Team",
+        "text": "Our lawyers base their consultations on the rules of law of Ukraine and international treaties to which Ukraine is a party, as well as on judicial practice and legal doctrine, both national and foreign. For the sake of more effective counselling, our lawyers constantly improve their qualifications.",
+        "author": "Maxim Sloboda"
+      },
+      {
+        "id": 2,
+        "title": "Our Approach",
+        "text": "In order to offer the best possible service for our clients, we harness the latest market developments in legal technology and innovation. Our forward thinking, innovative approach to legal services complements the best in class advice on which our reputation is built.",
+        "author": "Maxim Sloboda"
+      }
+    ]
+  },
+  "statistics": [
+    {
+      "img": "/images/statistics/success.svg",
+      "count": "95%",
+      "text": "Successful Cases",
+      "id": 0
+    },
+    {
+      "img": "/images/statistics/satisfied.svg",
+      "count": 86,
+      "text": "Happy Clients",
+      "id": 1
+    },
+    {
+      "img": "/images/statistics/experience.svg",
+      "count": 10,
+      "text": "Years Of Experience",
+      "id": 2
+    },
+    {
+      "img": "/images/statistics/team.svg",
+      "count": 6,
+      "text": "Experienced Team",
+      "id": 3
+    }
+  ],
+  "team": {
+    "title": "Our Team",
+    "teamList": [
+      {
+        "name": "Maxim Sloboda",
+        "id": 0,
+        "prof": "Lawyer",
+        "img": "/images/team/avatar_1.jpg",
+        "text": "Lawyer, Head of White Collar Crime as well as Tax and Customs Litigation practices."
+      },
+      {
+        "name": "Lydia Kravchuk",
+        "id": 1,
+        "prof": "Lawyer",
+        "img": "/images/team/avatar_6.jpg",
+        "text": "PhD hab., lawyer, specializes in legal support in investment projects as well as dispute resolution, including international arbitration."
+      },
+      {
+        "name": "Alexander Kozhukh",
+        "id": 2,
+        "prof": "Senior associate",
+        "img": "/images/team/avatar_3.jpg",
+        "text": "The main areas of Alexander’s professional activities are litigation, bankruptcy and enforcement proceedings."
+      },
+      {
+        "name": "Anastasia Kuzyk",
+        "id": 3,
+        "prof": "Counsel",
+        "img": "/images/team/avatar_4.jpg",
+        "text": "Advises clients on various issues of  wealth management, business and investment structures for families, investments in real property."
+      },
+      {
+        "name": "Olena Stepanenko",
+        "id": 4,
+        "prof": "Senior partner",
+        "img": "/images/team/avatar_5.jpg",
+        "text": "Focuses on local and cross-border litigation and international arbitration. She also has considerable experience in banking and financial disputes."
+      },
+      {
+        "name": "Dmitry Kozubenko",
+        "id": 5,
+        "prof": "Counsel",
+        "img": "/images/team/avatar_2.jpg",
+        "text": "Dmitry specializes in litigation in the field of economic, administrative and criminal law."
+      }
+    ]
+  },
+  "services": {
+    "title": "Services",
+    "servicesList": [
+      {
+        "title": "Land law",
+        "img": "/images/services/land_law.jpg",
+        "id": 0
+      },
+      {
+        "title": "Family law",
+        "img": "/images/services/family_law.jpg",
+        "id": 1
+      },
+      {
+        "title": "Custom law",
+        "img": "/images/services/custom_law.jpg",
+        "id": 2
+      },
+      {
+        "title": "Tax law",
+        "img": "/images/services/tax_law.jpg",
+        "id": 3
+      },
+      {
+        "title": "Corporate Law",
+        "img": "/images/services/corporate_law.jpg",
+        "id": 4
+      },
+      {
+        "title": "Criminal law",
+        "img": "/images/services/criminal_law.jpg",
+        "id": 5
+      },
+      {
+        "title": "Administrative law",
+        "img": "/images/services/administrative_law.jpg",
+        "id": 6
+      },
+      {
+        "title": "Financial law",
+        "img": "/images/services/finance_law.jpg",
+        "id": 7
+      },
+      {
+        "title": "Commercial law",
+        "img": "/images/services/commercial_law.jpg",
+        "id": 8
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "testimonialsList": [
+      {
+        "author": "Oleh T.",
+        "text": "I can honestly say that there is not one company that I've ever worked with that has better service than Balance.",
+        "img": "/images/testimonials/avatar_1.jpg",
+        "id": 0
+      },
+      {
+        "author": "Anastasia N.",
+        "text": "In all cases, when we applied for legal assistance, the lawyers of Balance provided qualified consultations and defended my interests in solving complex issues.",
+        "img": "/images/testimonials/avatar_5.jpg",
+        "id": 1
+      },
+      {
+        "author": "Sergey A.",
+        "text": "My experience with Balance was excellent. My lawyer gave my case all the time and attention that was needed to be successful in court.",
+        "img": "/images/testimonials/avatar_2.jpg",
+        "id": 2
+      },
+      {
+        "author": "Andriy L.",
+        "text": "Dmitry Kozubenko helped me finish a long time case I’ve been trying to wrap up for years. He was completely understanding, professional and worked very diligently to the end and I’m so grateful! Highly recommend!!.",
+        "img": "/images/testimonials/avatar_3.jpg",
+        "id": 3
+      },
+      {
+        "author": "Ivan A.",
+        "text": "I am satisfied because I saved my nerves and time, the company knows the requirements of the justice authorities, so they quickly go through the paperwork.",
+        "img": "/images/testimonials/avatar_4.jpg",
+        "id": 4
+      },
+      {
+        "author": "Maxim R.",
+        "text": "I chose this company because of the optimal price for services, and then made sure that the choice was successful - they work professionally, quickly, with respect to the client.",
+        "img": "/images/testimonials/avatar_6.jpg",
+        "id": 5
+      },
+      {
+        "author": "Catherine C.",
+        "text": "I am grateful to the lawyers of the company for their work, they are truly experts in their field, they did everything expeditiously...",
+        "img": "/images/testimonials/avatar_5.jpg",
+        "id": 6
+      },
+      {
+        "author": "Natalia L.",
+        "text": "The Balance Law Firm has been very helpful in three recent real estate deals and I look forward to future work with them.",
+        "img": "/images/testimonials/avatar_8.jpg",
+        "id": 7
+      },
+      {
+        "author": "Alexander K.",
+        "text": "I found everyone at the Balance Law Firm to be completely professional. They made me feel like I was their only client. I highly recommended the Balance Law Firm!.",
+        "img": "/images/testimonials/avatar_9.jpg",
+        "id": 8
+      }
+    ]
+  },
+  "faq": {
+    "title": "FAQ",
+    "faqList": [
+      {
+        "title": "How do I get started?",
+        "text": "The best way to begin your personal case is to fill out the feedback form.",
+        "id": 0
+      },
+      {
+        "title": "Why should I choose Balance?",
+        "text": "Our company is unique in that while we all specialize in various aspects of the law, the size of our legal team allows us to offer counsel on nearly any facet of the law.",
+        "id": 1
+      },
+      {
+        "title": "How long will my case take?",
+        "text": "The length of a case, from the initial free consultation through to the resolution of the case depends on several variables, so it is not possible to say exactly how long a case may take. ",
+        "id": 2
+      },
+      {
+        "title": "Who will work on my case?",
+        "text": "Your case will never be handled by just one person.  Instead, the collaboration between lawyers, in each individual case we handle, ensures that you are represented as thoroughly and completely as your needs require.",
+        "id": 3
+      },
+      {
+        "title": "Do you charge for a consultation?",
+        "text": "We never charge for an initial consultation.  At the free initial consultation, we will discuss the details of your potential case, the legal process and answer any questions you may have.",
+        "id": 4
+      },
+      {
+        "title": "Can I trust you with personal information?",
+        "text": "Absolutely! The information you transmit to the lawyer is not subject to disclosure to unauthorized persons, acquires the status of attorney-client privilege and is protected by the law of Ukraine.",
+        "id": 5
+      }
+    ]
+  },
+  "feedbackForm": {
+    "title": "Contact us",
+    "formPlaceholders": {
+      "namePlaceholder": "name",
+      "phonePlaceholder": "phone number",
+      "emailPlaceholder": "email",
+      "messagePlaceholder": "Your message"
+    },
+    "submitButtonText": "Send",
+    "successAlertText": "Your message was sent"
+  },
+  "footer": {
+    "contacts": {
+      "title": "Our Contacts",
+      "contactsList": {
+        "phone": "+123 456 789 47 45",
+        "email": "balance@gmail.com",
+        "location": "Law Company \"Balance\" Ukraine, 01376 Kyiv, Shevchenko street, 76"
+      }
+    },
+    "copyright": "Copyright 2021 © BALANCE. All rights reserved."
+  }
+}

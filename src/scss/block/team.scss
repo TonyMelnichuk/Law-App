@@ -1,0 +1,136 @@
+.team {
+  background-color: $grey;
+  padding: 4rem 0;
+
+  @include breakpoint($mobileL-bp) {
+    padding: 4rem 3rem;
+  }
+}
+
+.team__members {
+  display: grid;
+  grid-gap: 6rem;
+  justify-items: center;
+  grid-template-columns: 1fr;
+
+  @include breakpoint($mobileL-bp) {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+}
+
+.team__member {
+  width: 100%;
+  max-width: 40rem;
+  text-align: center;
+}
+
+.team__member-card {
+  position: relative;
+  height: 40rem;
+  background-color: $primary;
+  box-shadow: 0px 0px 14px -2px #000000;
+  margin-bottom: 2rem;
+
+  &:hover {
+    & + .team__member-name {
+      display: none;
+    }
+
+    .team__member-img {
+      width: 10rem;
+      height: 10rem;
+      border: 3px solid white;
+      border-radius: 50%;
+      top: 0;
+      transform: translate(-50%, -50%);
+      left: 50%;
+
+      @include breakpoint($mobileL-bp) {
+        width: 13rem;
+        height: 13rem;
+      }
+    }
+    .team__member-description {
+      bottom: -30%;
+    }
+  }
+}
+
+.team__member-img {
+  transition: all .3s ease;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.team__member-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.team__member-description {
+  position: absolute;
+  transition: bottom .3s ease-in-out;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  bottom: -100%;
+}
+
+.team__member-name {
+  font-size: 2.3rem;
+  color: $secondary;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+  font-family: 'Lora', serif;
+  @include line-clamp(2);
+
+  @include breakpoint($mobileL-bp) {
+    font-size: 2.4rem;
+  }
+
+  @include breakpoint($tablet-bp) {
+    font-size: 2.5rem;
+  }
+}
+
+.team__member-prof {
+  display: inline-block;
+  padding: .2rem .5rem;
+  color: darken($primary, 20%);
+  background: $secondary;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+
+  @include breakpoint($mobileL-bp) {
+    font-size: 1.2rem;
+  }
+
+  @include breakpoint($tablet-bp) {
+    font-size: 1.4rem;
+  }
+}
+
+.team__member-text {
+  font-size: 1.1rem;
+  font-family: 'Montserrat', sans-serif;
+  color: darken($secondary, 15%);
+  font-weight: 300;
+
+  @include breakpoint($mobileL-bp) {
+    font-size: 1.3rem;
+  }
+
+  @include breakpoint($tablet-bp) {
+    font-size: 1.5rem;
+  }
+}
+

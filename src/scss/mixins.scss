@@ -1,0 +1,21 @@
+@mixin breakpoint($bp) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin line-clamp($line) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin elem-focus($type: 'border', $size: 3px, $color: $focus-color) {
+  @if $type == 'box-shadow' {
+    box-shadow: 0px 0px 0px $size $color;
+  } @else {
+    border: $size solid $color;
+  }
+}

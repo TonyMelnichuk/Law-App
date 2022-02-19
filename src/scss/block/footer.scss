@@ -1,0 +1,110 @@
+.footer {
+  background-color: $primary;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+.footer__contacts {
+  text-align: center;
+  margin-bottom: 1.5rem;
+
+  @include breakpoint($mobileL-bp) {
+    margin-bottom: 2rem;
+  }
+}
+
+.footer__contacts-title {
+  color: $secondary;
+  margin-bottom: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 2.1rem;
+
+  @include breakpoint($mobileL-bp) {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+  }
+
+  @include breakpoint($tablet-bp) {
+    font-size: 2.5rem;
+  }
+}
+
+.footer__contacts-links {
+  background-color: $secondary;
+  padding: 2rem 2.5rem;
+  display: inline-flex;
+  flex-direction: column;
+
+  @include breakpoint($mobileL-bp) {
+    padding: 2rem 5rem;
+  }
+}
+
+.footer__contact-link {
+  margin-bottom: .7rem;
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  grid-column-gap: .5rem;
+  align-items: center;
+  text-decoration: none;
+  padding: .2rem 0;
+  border-bottom: 1px solid transparent;
+  transition: border .1s ease-in-out;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    border-bottom: 1px solid $primary;
+  }
+
+  &:focus {
+    @include elem-focus('box-shadow', 1px, $primary);
+  }
+
+  &:focus-visible {
+    @include elem-focus('box-shadow', 4px);
+  }
+}
+
+.footer__contact-img {
+  font-size: 1.5rem;
+  color: $primary;
+
+  @include breakpoint($mobileL-bp) {
+    font-size: 2rem;
+  }
+}
+
+.footer__contact-text {
+  color: $primary;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+
+  @include breakpoint($mobileL-bp) {
+    font-size: 1.3rem;
+  }
+
+  @include breakpoint($tablet-bp) {
+    font-size: 1.5rem;
+  }
+}
+
+
+.footer__copyright {
+  color: $secondary;
+  text-align: center;
+  font-size: .8rem;
+  font-family: 'Lora', serif;
+
+  @include breakpoint($mobileL-bp) {
+    font-size: .9rem;
+  }
+
+  @include breakpoint($tablet-bp) {
+    font-size: 1rem;
+  }
+}

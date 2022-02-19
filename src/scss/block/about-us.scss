@@ -1,0 +1,161 @@
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $grey;
+  overflow: hidden;
+  padding: 0 1.5rem;
+
+  @include breakpoint($mobileS-bp) {
+    padding: 0 2.5rem;
+  }
+
+  @include breakpoint($tablet-bp) {
+    padding: 0 4rem;
+  }
+}
+
+.about-us__avatar {
+  max-width: 22rem;
+  display: none;
+  object-fit: cover;
+  object-position: 50% 30%;
+  box-shadow: 3px 3px 6px 1px $primary;
+
+  @include breakpoint($tablet-bp) {
+    display: block;
+  }
+}
+
+.about-us__slider {
+  width: 80%;
+  height: 40rem;
+}
+
+.about-us__slider-content {
+  transition: transform 0.3s linear;
+}
+
+.about-us__slide {
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0;
+
+  @include breakpoint($tablet-bp) {
+    padding: 0 3rem;
+  }
+}
+
+.about-us__slide-title {
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  background: $secondary;
+  color: $primary;
+  line-height: 0.8;
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-size: 2rem;
+
+  @include breakpoint($mobileL-bp) {
+    font-size: 2.4rem;
+  }
+
+  @include breakpoint($tablet-bp) {
+    font-size: 3rem;
+  }
+}
+
+.about-us__slide-text {
+  color: $secondary;
+  max-height: 26rem;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  line-height: 120%;
+  margin-bottom: 1rem;
+  letter-spacing: 1.5px;
+  font-size: 1.1rem;
+
+  @include breakpoint($mobileL-bp) {
+    font-size: 1.3rem;
+  }
+
+  @include breakpoint($tablet-bp) {
+    font-size: 1.5rem;
+  }
+}
+
+.about-us__slide-author {
+  color: darken($secondary, 30%);
+  margin-left: 4.5rem;
+  position: relative;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -4rem;
+    width: 3rem;
+    height: 1px;
+    background: darken($secondary, 20%);
+  }
+
+  @include breakpoint($mobileS-bp) {
+    font-size: 1.2rem;
+  }
+
+  @include breakpoint($tablet-bp) {
+    font-size: 1.4rem;
+  }
+}
+
+.about-us__btns {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.about-us__btn {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 2rem;
+  border: none;
+  background: lighten($primary, 10%);
+  box-shadow: inset 0px 0px 16px 0px #000000;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out, border 0.1s linear;
+
+  &:hover {
+    border: 1px solid $secondary;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:focus-visible {
+    @include elem-focus;
+  }
+
+  &--active {
+    background: $secondary;
+    transform: rotate(-45deg);
+    box-shadow: none;
+  }
+
+  @include breakpoint($tablet-bp) {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  @include breakpoint($mobileS-bp) {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}

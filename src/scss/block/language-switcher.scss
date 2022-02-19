@@ -1,0 +1,99 @@
+.language-switcher {
+  position: relative;
+  width: 10rem;
+  height: 4rem;
+}
+
+.language-switcher__checkbox {
+  appearance: none;
+  position: relative;
+  width: inherit;
+  height: inherit;
+  background-color: transparent;
+  transition: 0.25s -0.1s;
+  cursor: pointer;
+
+  &:before,
+  &:after {
+    z-index: 2;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+    @include breakpoint($mobileL-bp) {
+      font-size: 1.5rem;
+    }
+
+    @include breakpoint($laptop-bp) {
+      padding: 0.5rem;
+    }
+  }
+
+  &:before {
+    content: "ua";
+  }
+
+  &:after {
+    content: "en";
+    right: 0;
+  }
+
+  &:checked {
+    &:before {
+      color: $primary;
+      transition: color 0.5s 0.2s;
+    }
+    &:after {
+      color: darken($secondary, 10%);
+      transition: color 0.5s;
+    }
+    & + label {
+      left: 0;
+      right: 5rem;
+      background: darken($secondary, 10%);
+      transition: left 0.5s, right 0.4s 0.2s;
+    }
+  }
+  &:not(:checked) {
+    transition: background 0.5s -0.1s;
+    &:before {
+      color: darken($secondary, 10%);
+      transition: color 0.5s;
+    }
+    &:after {
+      color: $primary;
+      transition: color 0.5s 0.2s;
+    }
+    & + .language-switcher__label {
+      left: 5rem;
+      right: 0;
+      background: darken($secondary, 10%);
+      transition: left 0.4s 0.2s, right 0.5s, background 0.35s -0.1s;
+    }
+  }
+
+  &:hover {
+    & + .language-switcher__label {
+      background: white;
+    }
+  }
+
+  &:focus-visible {
+    @include elem-focus("box-shadow");
+  }
+}
+
+.language-switcher__label {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 0.4rem;
+}
