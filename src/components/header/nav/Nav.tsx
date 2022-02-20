@@ -54,14 +54,14 @@ const Nav: FC<NavProps> = (props) => {
   const [isMobile, setIsMobile] = useState<boolean | null>(null)
 
   useEffect(() => {
-    const defineWindowWidth = () => {
+    const handleResize = () => {
       setIsMobile(window.innerWidth < 1025)
     }
 
-    window.addEventListener('resize', defineWindowWidth)
+    window.addEventListener('resize', handleResize)
 
-    defineWindowWidth()
-    return () => window.removeEventListener('resize', defineWindowWidth)
+    handleResize()
+    return () => window.removeEventListener('resize', handleResize)
   }, [])
 
 

@@ -42,6 +42,7 @@ const NavLink: FC<NavLinkProps> = (props) => {
         smooth={true}
         duration={500}
         spy={true}
+        offset={-40}
         tabIndex={0}
         to={path}
       >
